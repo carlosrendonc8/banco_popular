@@ -2,7 +2,6 @@ package BancoPopular.Commons.domains.entity.user;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -13,16 +12,14 @@ public class UserEntity {
     @Id
     @Column(name = "user_id")
     public Integer id;
+    @Column(name = "user_type_id")
+    public String userTypeId;
     @Column(name = "user_name")
-    public String name;
+    public String userName;
     @Column(name = "user_email")
-    public String email;
+    public String userEmail;
     @Column(name = "user_password")
-    public String password;
+    public String userPassword;
     @Column(name = "user_number")
-    public int number;
-
-
-    public String getPassword() {return password;}
-    public void setPassword(String password) {this.password = password;}
+    public int userNumber;
 }

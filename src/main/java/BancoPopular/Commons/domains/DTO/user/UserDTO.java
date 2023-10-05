@@ -1,7 +1,6 @@
 package BancoPopular.Commons.domains.DTO.user;
 
 import lombok.*;
-
 import java.io.Serializable;
 
 @Data
@@ -12,24 +11,28 @@ import java.io.Serializable;
 @ToString
 @Builder
 public class UserDTO implements Serializable {
-    public Integer id;
-    public String name;
+    public Integer userId;
+    public String userTypeId;
+    public String userName;
     public String email;
-    public String password;
-    public int number;
+    public String userPassword;
+    public int userNumber;
 
-    public Integer getId() {return id;}
-    public void setId(Integer id) {this.id = id;}
+    public Integer getUserId() {return userId;}
+    public void setUserId(Integer userId) {this.userId = userId;}
 
-    public String getName() {return name;}
-    public void setName(String name) {this.name = name;}
+    public String getUserTypeId() {return userTypeId;}
+    public void setUserTypeId(String userTypeId) {this.userTypeId = userTypeId;}
+
+    public String getUserName() {return userName;}
+    public void setUserName(String userName) {this.userName = userName;}
 
     public String getEmail() {return email;}
     public void setEmail(String email) {this.email = email;}
 
-    public String getPassword() {return password;}
-    public void setPassword(String password) {this.password = password;}
+    public String getUserPassword() {return userPassword;}
+    public void setUserPassword(String userPassword) {this.userPassword = userPassword;}
 
-    public int getNumber() {return number;}
-    public void setNumber(int number) {this.number = number;}
+    public int getUserNumber() {return userNumber;}
+    public void setUserNumber(int userNumber) {this.userNumber = userNumber;}
 }
