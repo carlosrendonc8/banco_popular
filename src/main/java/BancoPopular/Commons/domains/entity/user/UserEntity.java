@@ -22,4 +22,7 @@ public class UserEntity {
     public String userPassword;
     @Column(name = "user_number")
     public int userNumber;
+
+    public String getUserPassword() {return userPassword;}
+    public void setUserPassword(String userPassword) {this.userPassword = userPassword;}
 }
